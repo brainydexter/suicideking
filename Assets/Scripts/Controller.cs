@@ -38,6 +38,9 @@ public class Controller : MonoBehaviour {
 	[SerializeField]
 	private GameObject findCulprit;
 
+	[SerializeField]
+	private GameObject tryAgainGameObj;
+
 	private string classifier_Id = "cards_785616624";
 
 	private bool processingImage = false;
@@ -127,9 +130,8 @@ public class Controller : MonoBehaviour {
 
 			//foreach (ClassifyTopLevelSingle image in classify.images)
 			{
-				if (classify.images_processed >= 1 && classify.images.Length >= 1) 
-				{
-					ClassifyTopLevelSingle image = classify.images[0];
+				if (classify.images_processed >= 1 && classify.images.Length >= 1) {
+					ClassifyTopLevelSingle image = classify.images [0];
 
 					Debug.Log ("WebCamRecognition" + " \tsource_url: " + image.source_url + ", resolved_url: " + image.resolved_url);
 
@@ -146,12 +148,15 @@ public class Controller : MonoBehaviour {
 
 						InferWatsonResult (result);
 					}
+				} else {
+					tryAgainGameObj.SetActive (true);
 				}
 			}
 		}
 		else
 		{
 			Debug.Log("WebCamRecognition" + " Classification failed!");
+			tryAgainGameObj.SetActive (true);
 		}
 	}
 
@@ -220,6 +225,7 @@ public class Controller : MonoBehaviour {
 		queenHearts.SetActive (false);
 		queenDiamonds.SetActive (false);
 		findCulprit.SetActive (false);
+		tryAgainGameObj.SetActive (false);
 	}
 
 	#endregion
