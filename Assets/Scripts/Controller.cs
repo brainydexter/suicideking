@@ -41,7 +41,9 @@ public class Controller : MonoBehaviour {
 	[SerializeField]
 	private GameObject tryAgainGameObj;
 
-	private string classifier_Id = "cards_785616624";
+	[SerializeField] StoryController storyController;
+
+	private string classifier_Id = "suicide_king_584094879";
 
 	private bool processingImage = false;
 	//[SerializeField]
@@ -98,7 +100,7 @@ public class Controller : MonoBehaviour {
 			processingImage = true;
 
 			string[] classifierIds = { classifier_Id };
-			string[] owners = { "IBM", "me" };
+			string[] owners = { "me" };
 			if (!m_VisualRecognition.Classify (OnClassify, imageData, owners, classifierIds)) {
 				Debug.Log ("Classigy image failed");
 				processingImage = false;
@@ -139,7 +141,7 @@ public class Controller : MonoBehaviour {
 
 					foreach (ClassifyPerClassifier classifier in image.classifiers) {
 						Debug.Log ("WebCamRecognition" + " \t\tclassifier_id: " + classifier.classifier_id + ", name: " + classifier.name);
-						if (classifier.name == "cards") {
+						if (classifier.name == "suicide_king") {
 							foreach (ClassResult classResult in classifier.classes) {
 								result.AddResult (classResult.m_class, classResult.score);
 								Debug.Log ("WebCamRecognition" + " \t\t\tclass: " + classResult.m_class + ", score: " + classResult.score + ", type_hierarchy: " + classResult.type_hierarchy);
@@ -203,8 +205,10 @@ public class Controller : MonoBehaviour {
 			}
 		}
 
-		if (queenClubs.activeInHierarchy && queenSpades.activeInHierarchy && queenHearts.activeInHierarchy && queenDiamonds.activeInHierarchy)
-			findCulprit.SetActive (true);
+		if (queenClubs.activeInHierarchy && queenSpades.activeInHierarchy && queenHearts.activeInHierarchy && queenDiamonds.activeInHierarchy) {
+			storyController.TransitionToExamine ();
+			//findCulprit.SetActive (true);
+		}
 	}
 
 	#endregion
@@ -258,7 +262,7 @@ public class CardClassResult
 	private QueenIndex ConvertClassType(string classType)
 	{
 		switch (classType) {
-		case "queen_spades":
+		case "queen_spade":
 			return QueenIndex.SPADES;
 		case "queen_clubs":
 			return QueenIndex.CLUB;
