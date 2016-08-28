@@ -35,7 +35,12 @@ public class Controller : MonoBehaviour {
 	[SerializeField]
 	private GameObject queenDiamonds;
 
+	[SerializeField]
+	private GameObject findCulprit;
+
 	private string classifier_Id = "cards_785616624";
+
+	private bool processingImage = false;
 	//[SerializeField]
 	//private WebCamDisplayWidget m_WebCamDisplayWidget;
 
@@ -86,10 +91,18 @@ public class Controller : MonoBehaviour {
 	{
 		Debug.Assert (m_VisualRecognition != null, "[Controller]: VisualRecognition is not recognized");
 
-		string[] classifierIds = {classifier_Id};
-		string[] owners = { "IBM", "me" };
-		if (!m_VisualRecognition.Classify (OnClassify, imageData, owners, classifierIds))
-			Debug.Log ("Classigy image failed");
+		if (!processingImage) {
+			processingImage = true;
+
+			string[] classifierIds = { classifier_Id };
+			string[] owners = { "IBM", "me" };
+			if (!m_VisualRecognition.Classify (OnClassify, imageData, owners, classifierIds)) {
+				Debug.Log ("Classigy image failed");
+				processingImage = false;
+			}
+		} else {
+			Debug.Log ("Dr Watson is processing the previous image. Have Patience");
+		}
 	}
 
 	private RequestStatus IdentityCulprit(byte[] imageData, out Card card)
@@ -106,6 +119,8 @@ public class Controller : MonoBehaviour {
 
 	private void OnClassify(ClassifyTopLevelMultiple classify, string data)
 	{
+		processingImage = false;
+
 		if (classify != null)
 		{
 			Debug.Log("WebCamRecognition" + " images processed: " + classify.images_processed);
@@ -170,18 +185,21 @@ public class Controller : MonoBehaviour {
 			switch (queenIndex) {
 			case QueenIndex.CLUB:
 				queenClubs.SetActive (true);
-				return;
+				break;
 			case QueenIndex.SPADES:
 				queenSpades.SetActive (true);
-				return;
+				break;
 			case QueenIndex.HEARTS:
 				queenHearts.SetActive (true);
-				return;
+				break;
 			case QueenIndex.DIAMONDS:
 				queenDiamonds.SetActive (true);
-				return;
+				break;
 			}
 		}
+
+		if (queenClubs.activeInHierarchy && queenSpades.activeInHierarchy && queenHearts.activeInHierarchy && queenDiamonds.activeInHierarchy)
+			findCulprit.SetActive (true);
 	}
 
 	#endregion
@@ -201,6 +219,7 @@ public class Controller : MonoBehaviour {
 		queenClubs.SetActive (false);
 		queenHearts.SetActive (false);
 		queenDiamonds.SetActive (false);
+		findCulprit.SetActive (false);
 	}
 
 	#endregion
