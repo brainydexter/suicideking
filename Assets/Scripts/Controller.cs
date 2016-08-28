@@ -23,7 +23,19 @@ public class Controller : MonoBehaviour {
 	[SerializeField]
 	private float threshold = 0f;
 
-	private string classifier_Id = "cards_1301927318";
+	[SerializeField]
+	private GameObject queenSpades;
+
+	[SerializeField]
+	private GameObject queenClubs;
+
+	[SerializeField]
+	private GameObject queenHearts;
+
+	[SerializeField]
+	private GameObject queenDiamonds;
+
+	private string classifier_Id = "cards_785616624";
 	//[SerializeField]
 	//private WebCamDisplayWidget m_WebCamDisplayWidget;
 
@@ -76,7 +88,7 @@ public class Controller : MonoBehaviour {
 
 		string[] classifierIds = {classifier_Id};
 		string[] owners = { "IBM", "me" };
-		if (!m_VisualRecognition.Classify (OnClassify, imageData, owners, classifierIds, threshold))
+		if (!m_VisualRecognition.Classify (OnClassify, imageData, owners, classifierIds))
 			Debug.Log ("Classigy image failed");
 	}
 
@@ -100,7 +112,7 @@ public class Controller : MonoBehaviour {
 
 			//foreach (ClassifyTopLevelSingle image in classify.images)
 			{
-				if (classify.images.Length >= 1) 
+				if (classify.images_processed >= 1 && classify.images.Length >= 1) 
 				{
 					ClassifyTopLevelSingle image = classify.images[0];
 
@@ -153,7 +165,23 @@ public class Controller : MonoBehaviour {
 
 	private void EnableQueen(QueenIndex queenIndex)
 	{
-		Debug.Log ("Enablbing queen: " + queenIndex);
+		Debug.Log ("Enabling queen: " + queenIndex);
+		if (queenIndex != QueenIndex.NOT_FOUND) {
+			switch (queenIndex) {
+			case QueenIndex.CLUB:
+				queenClubs.SetActive (true);
+				return;
+			case QueenIndex.SPADES:
+				queenSpades.SetActive (true);
+				return;
+			case QueenIndex.HEARTS:
+				queenHearts.SetActive (true);
+				return;
+			case QueenIndex.DIAMONDS:
+				queenDiamonds.SetActive (true);
+				return;
+			}
+		}
 	}
 
 	#endregion
@@ -165,6 +193,14 @@ public class Controller : MonoBehaviour {
 		Debug.Assert (m_WebCamWidget != null, "[Controller]: Web camera widget is not assigned");
 
 		m_VisualRecognition = new VisualRecognition();
+	}
+
+	void Start()
+	{
+		queenSpades.SetActive (false);
+		queenClubs.SetActive (false);
+		queenHearts.SetActive (false);
+		queenDiamonds.SetActive (false);
 	}
 
 	#endregion
