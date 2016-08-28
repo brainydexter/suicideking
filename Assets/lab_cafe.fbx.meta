@@ -1,0 +1,686 @@
+fileFormatVersion: 2
+guid: b0f4511fe159b4f7ab1cdcc256495ae8
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: CUBEMAP_CAMERAS
+    100002: //RootNode
+    100004: VRJ_AssitantTable
+    100006: VRJ_Ceiling
+    100008: VRJ_Cocoa_Mound
+    100010: VRJ_CocoaCan
+    100012: VRJ_CocoaCan1
+    100014: VRJ_CocoaCan2_spilled
+    100016: VRJ_CocoaCan2_spilledLid
+    100018: VRJ_CocoaCan3
+    100020: VRJ_CocoaCan4
+    100022: VRJ_CocoaCan5
+    100024: VRJ_Column
+    100026: VRJ_Column1
+    100028: VRJ_Column2
+    100030: VRJ_Column3
+    100032: VRJ_Crystal
+    100034: VRJ_Crystal_Mounted
+    100036: VRJ_CrystalMount
+    100038: VRJ_EgyptPostCard
+    100040: VRJ_Electrical_Arc
+    100042: VRJ_Electrical_Arc 1
+    100044: VRJ_Electrical_Arc_02
+    100046: VRJ_Electrical_Arc_03
+    100048: VRJ_Electrical_Arc_04
+    100050: VRJ_Electrical_Arc_05
+    100052: VRJ_Electrical_Arc_06
+    100054: VRJ_Floor_SectionSpar
+    100056: VRJ_hutch_drawers
+    100058: VRJ_hutch_marble
+    100060: VRJ_hutch_mirror
+    100062: VRJ_Hutch_Star
+    100064: VRJ_Labbench
+    100066: VRJ_Labbench 1
+    100068: VRJ_Magician_Coatrack
+    100070: VRJ_magician_door
+    100072: VRJ_Magician_Table
+    100074: VRJ_ManifestoPlaybill
+    100076: VRJ_Mirror_BackofMirror
+    100078: VRJ_Mirror_Crystal
+    100080: VRJ_Mirror_CrystalOn
+    100082: VRJ_Mirror_NoCrystal
+    100084: VRJ_MirrorFrame
+    100086: VRJ_Note_Blank
+    100088: VRJ_Note_burned
+    100090: VRJ_Note_Inkrevealed
+    100092: VRJ_Painting
+    100094: VRJ_PaperItemsGroup
+    100096: VRJ_Rabbit_Footprint
+    100098: VRJ_Rabbit_Footprint1
+    100100: VRJ_Rabbit_Footprint2
+    100102: VRJ_Rabbit_Footprint3
+    100104: VRJ_Rabbit_Footprint4
+    100106: VRJ_Rabbit_Footprint5
+    100108: VRJ_Room
+    100110: VRJ_room
+    100112: VRJ_Room 1
+    100114: VRJ_Samovar1
+    100116: VRJ_Skybox
+    100118: VRJ_TeaPot_Spin
+    100120: VRJ_TopHat
+    100122: VRJ_TowerLeg2
+    100124: VRJChandelier
+    100126: X_minus
+    100128: X_plus
+    100130: Y_minus
+    100132: Y_plus
+    100134: Z_minus
+    100136: Z_plus
+    100138: VRJ_PaintingRabbit
+    100140: VRJ_TeaPot_Broken
+    100142: VRJ_TowerLeg
+    100144: VRJ_Crystal_Mounted_off
+    100146: VRJ_Crystal_Mounted_on
+    100148: VRJ_SparEndcap_Ceiling
+    100150: VRJ_SparEndcap_Floor
+    100152: VRJ_Tea_Cup
+    100154: VRJ_Tea_Cup_Samovar
+    100156: VRJ_EgyptPostcard
+    100158: VRJ_NewsPaper
+    100160: BellowsAnimationRoot
+    100162: BellowsBottomJointRoot
+    100164: BellowsJoint_Bottom
+    100166: BellowsJointTop
+    100168: BellowsTopRoot
+    100170: VRJ_Bellows
+    100172: VRJ_BELLOWSGROUP
+    100174: VRJ_CocoaCanUnspilled
+    100176: VRJ_CocoaSpilledGroup
+    100178: VRJ_Hutch_Star_onHutch
+    100180: VRJ_Hutch_Star_onSpar
+    100182: VRJ_MasterGroup
+    100184: VRJ_room_Group
+    100186: VRJ_SparTowerLegGroup
+    100188: VRJ_Parasol_Note
+    100190: VRJ_CarrotPlate
+    400000: CUBEMAP_CAMERAS
+    400002: //RootNode
+    400004: VRJ_AssitantTable
+    400006: VRJ_Ceiling
+    400008: VRJ_Cocoa_Mound
+    400010: VRJ_CocoaCan
+    400012: VRJ_CocoaCan1
+    400014: VRJ_CocoaCan2_spilled
+    400016: VRJ_CocoaCan2_spilledLid
+    400018: VRJ_CocoaCan3
+    400020: VRJ_CocoaCan4
+    400022: VRJ_CocoaCan5
+    400024: VRJ_Column
+    400026: VRJ_Column1
+    400028: VRJ_Column2
+    400030: VRJ_Column3
+    400032: VRJ_Crystal
+    400034: VRJ_Crystal_Mounted
+    400036: VRJ_CrystalMount
+    400038: VRJ_EgyptPostCard
+    400040: VRJ_Electrical_Arc
+    400042: VRJ_Electrical_Arc 1
+    400044: VRJ_Electrical_Arc_02
+    400046: VRJ_Electrical_Arc_03
+    400048: VRJ_Electrical_Arc_04
+    400050: VRJ_Electrical_Arc_05
+    400052: VRJ_Electrical_Arc_06
+    400054: VRJ_Floor_SectionSpar
+    400056: VRJ_hutch_drawers
+    400058: VRJ_hutch_marble
+    400060: VRJ_hutch_mirror
+    400062: VRJ_Hutch_Star
+    400064: VRJ_Labbench
+    400066: VRJ_Labbench 1
+    400068: VRJ_Magician_Coatrack
+    400070: VRJ_magician_door
+    400072: VRJ_Magician_Table
+    400074: VRJ_ManifestoPlaybill
+    400076: VRJ_Mirror_BackofMirror
+    400078: VRJ_Mirror_Crystal
+    400080: VRJ_Mirror_CrystalOn
+    400082: VRJ_Mirror_NoCrystal
+    400084: VRJ_MirrorFrame
+    400086: VRJ_Note_Blank
+    400088: VRJ_Note_burned
+    400090: VRJ_Note_Inkrevealed
+    400092: VRJ_Painting
+    400094: VRJ_PaperItemsGroup
+    400096: VRJ_Rabbit_Footprint
+    400098: VRJ_Rabbit_Footprint1
+    400100: VRJ_Rabbit_Footprint2
+    400102: VRJ_Rabbit_Footprint3
+    400104: VRJ_Rabbit_Footprint4
+    400106: VRJ_Rabbit_Footprint5
+    400108: VRJ_Room
+    400110: VRJ_room
+    400112: VRJ_Room 1
+    400114: VRJ_Samovar1
+    400116: VRJ_Skybox
+    400118: VRJ_TeaPot_Spin
+    400120: VRJ_TopHat
+    400122: VRJ_TowerLeg2
+    400124: VRJChandelier
+    400126: X_minus
+    400128: X_plus
+    400130: Y_minus
+    400132: Y_plus
+    400134: Z_minus
+    400136: Z_plus
+    400138: VRJ_PaintingRabbit
+    400140: VRJ_TeaPot_Broken
+    400142: VRJ_TowerLeg
+    400144: VRJ_Crystal_Mounted_off
+    400146: VRJ_Crystal_Mounted_on
+    400148: VRJ_SparEndcap_Ceiling
+    400150: VRJ_SparEndcap_Floor
+    400152: VRJ_Tea_Cup
+    400154: VRJ_Tea_Cup_Samovar
+    400156: VRJ_EgyptPostcard
+    400158: VRJ_NewsPaper
+    400160: BellowsAnimationRoot
+    400162: BellowsBottomJointRoot
+    400164: BellowsJoint_Bottom
+    400166: BellowsJointTop
+    400168: BellowsTopRoot
+    400170: VRJ_Bellows
+    400172: VRJ_BELLOWSGROUP
+    400174: VRJ_CocoaCanUnspilled
+    400176: VRJ_CocoaSpilledGroup
+    400178: VRJ_Hutch_Star_onHutch
+    400180: VRJ_Hutch_Star_onSpar
+    400182: VRJ_MasterGroup
+    400184: VRJ_room_Group
+    400186: VRJ_SparTowerLegGroup
+    400188: VRJ_Parasol_Note
+    400190: VRJ_CarrotPlate
+    2300000: VRJ_AssitantTable
+    2300002: VRJ_Ceiling
+    2300004: VRJ_Cocoa_Mound
+    2300006: VRJ_CocoaCan
+    2300008: VRJ_CocoaCan1
+    2300010: VRJ_CocoaCan2_spilled
+    2300012: VRJ_CocoaCan2_spilledLid
+    2300014: VRJ_CocoaCan3
+    2300016: VRJ_CocoaCan4
+    2300018: VRJ_CocoaCan5
+    2300020: VRJ_Column
+    2300022: VRJ_Column1
+    2300024: VRJ_Column2
+    2300026: VRJ_Column3
+    2300028: VRJ_Crystal
+    2300030: VRJ_Crystal_Mounted
+    2300032: VRJ_CrystalMount
+    2300034: VRJ_EgyptPostCard
+    2300036: VRJ_Electrical_Arc 1
+    2300038: VRJ_Electrical_Arc_02
+    2300040: VRJ_Electrical_Arc_03
+    2300042: VRJ_Electrical_Arc_04
+    2300044: VRJ_Electrical_Arc_05
+    2300046: VRJ_Electrical_Arc_06
+    2300048: VRJ_Floor_SectionSpar
+    2300050: VRJ_hutch_drawers
+    2300052: VRJ_hutch_marble
+    2300054: VRJ_Hutch_Star
+    2300056: VRJ_Labbench 1
+    2300058: VRJ_Magician_Coatrack
+    2300060: VRJ_magician_door
+    2300062: VRJ_Magician_Table
+    2300064: VRJ_ManifestoPlaybill
+    2300066: VRJ_Mirror_BackofMirror
+    2300068: VRJ_Mirror_Crystal
+    2300070: VRJ_Mirror_CrystalOn
+    2300072: VRJ_Mirror_NoCrystal
+    2300074: VRJ_MirrorFrame
+    2300076: VRJ_Note_Blank
+    2300078: VRJ_Note_burned
+    2300080: VRJ_Note_Inkrevealed
+    2300082: VRJ_Painting
+    2300084: VRJ_Rabbit_Footprint
+    2300086: VRJ_Rabbit_Footprint1
+    2300088: VRJ_Rabbit_Footprint2
+    2300090: VRJ_Rabbit_Footprint3
+    2300092: VRJ_Rabbit_Footprint4
+    2300094: VRJ_Rabbit_Footprint5
+    2300096: VRJ_Room 1
+    2300098: VRJ_Samovar1
+    2300100: VRJ_Skybox
+    2300102: VRJ_TeaPot_Spin
+    2300104: VRJ_TopHat
+    2300106: VRJ_TowerLeg2
+    2300108: VRJChandelier
+    2300110: VRJ_PaintingRabbit
+    2300112: VRJ_TeaPot_Broken
+    2300114: VRJ_TowerLeg
+    2300116: VRJ_Crystal_Mounted_off
+    2300118: VRJ_Crystal_Mounted_on
+    2300120: VRJ_SparEndcap_Ceiling
+    2300122: VRJ_SparEndcap_Floor
+    2300124: VRJ_Tea_Cup
+    2300126: VRJ_Tea_Cup_Samovar
+    2300128: VRJ_EgyptPostcard
+    2300130: VRJ_NewsPaper
+    2300132: VRJ_CocoaCanUnspilled
+    2300134: VRJ_Hutch_Star_onHutch
+    2300136: VRJ_Hutch_Star_onSpar
+    2300138: VRJ_Room
+    2300140: VRJ_Parasol_Note
+    2300142: VRJ_Electrical_Arc
+    2300144: VRJ_CarrotPlate
+    3300000: VRJ_AssitantTable
+    3300002: VRJ_Ceiling
+    3300004: VRJ_Cocoa_Mound
+    3300006: VRJ_CocoaCan
+    3300008: VRJ_CocoaCan1
+    3300010: VRJ_CocoaCan2_spilled
+    3300012: VRJ_CocoaCan2_spilledLid
+    3300014: VRJ_CocoaCan3
+    3300016: VRJ_CocoaCan4
+    3300018: VRJ_CocoaCan5
+    3300020: VRJ_Column
+    3300022: VRJ_Column1
+    3300024: VRJ_Column2
+    3300026: VRJ_Column3
+    3300028: VRJ_Crystal
+    3300030: VRJ_Crystal_Mounted
+    3300032: VRJ_CrystalMount
+    3300034: VRJ_EgyptPostCard
+    3300036: VRJ_Electrical_Arc 1
+    3300038: VRJ_Electrical_Arc_02
+    3300040: VRJ_Electrical_Arc_03
+    3300042: VRJ_Electrical_Arc_04
+    3300044: VRJ_Electrical_Arc_05
+    3300046: VRJ_Electrical_Arc_06
+    3300048: VRJ_Floor_SectionSpar
+    3300050: VRJ_hutch_drawers
+    3300052: VRJ_hutch_marble
+    3300054: VRJ_Hutch_Star
+    3300056: VRJ_Labbench 1
+    3300058: VRJ_Magician_Coatrack
+    3300060: VRJ_magician_door
+    3300062: VRJ_Magician_Table
+    3300064: VRJ_ManifestoPlaybill
+    3300066: VRJ_Mirror_BackofMirror
+    3300068: VRJ_Mirror_Crystal
+    3300070: VRJ_Mirror_CrystalOn
+    3300072: VRJ_Mirror_NoCrystal
+    3300074: VRJ_MirrorFrame
+    3300076: VRJ_Note_Blank
+    3300078: VRJ_Note_burned
+    3300080: VRJ_Note_Inkrevealed
+    3300082: VRJ_Painting
+    3300084: VRJ_Rabbit_Footprint
+    3300086: VRJ_Rabbit_Footprint1
+    3300088: VRJ_Rabbit_Footprint2
+    3300090: VRJ_Rabbit_Footprint3
+    3300092: VRJ_Rabbit_Footprint4
+    3300094: VRJ_Rabbit_Footprint5
+    3300096: VRJ_Room 1
+    3300098: VRJ_Samovar1
+    3300100: VRJ_Skybox
+    3300102: VRJ_TeaPot_Spin
+    3300104: VRJ_TopHat
+    3300106: VRJ_TowerLeg2
+    3300108: VRJChandelier
+    3300110: VRJ_PaintingRabbit
+    3300112: VRJ_TeaPot_Broken
+    3300114: VRJ_TowerLeg
+    3300116: VRJ_Crystal_Mounted_off
+    3300118: VRJ_Crystal_Mounted_on
+    3300120: VRJ_SparEndcap_Ceiling
+    3300122: VRJ_SparEndcap_Floor
+    3300124: VRJ_Tea_Cup
+    3300126: VRJ_Tea_Cup_Samovar
+    3300128: VRJ_EgyptPostcard
+    3300130: VRJ_NewsPaper
+    3300132: VRJ_CocoaCanUnspilled
+    3300134: VRJ_Hutch_Star_onHutch
+    3300136: VRJ_Hutch_Star_onSpar
+    3300138: VRJ_Room
+    3300140: VRJ_Parasol_Note
+    3300142: VRJ_Electrical_Arc
+    3300144: VRJ_CarrotPlate
+    4300000: VRJ_magician_door
+    4300002: VRJ_Room
+    4300004: VRJ_Floor_SectionSpar
+    4300006: VRJ_Ceiling
+    4300008: VRJ_Column
+    4300010: VRJ_Column1
+    4300012: VRJ_Column2
+    4300014: VRJ_Column3
+    4300016: VRJ_Painting
+    4300018: VRJChandelier
+    4300020: VRJ_hutch_marble
+    4300022: VRJ_hutch_drawers
+    4300024: VRJ_MirrorFrame
+    4300026: VRJ_Mirror_NoCrystal
+    4300028: VRJ_Mirror_Crystal
+    4300030: VRJ_Mirror_CrystalOn
+    4300032: VRJ_Mirror_BackofMirror
+    4300034: VRJ_CocoaCan2_spilledLid
+    4300036: VRJ_Cocoa_Mound
+    4300038: VRJ_Rabbit_Footprint
+    4300040: VRJ_Rabbit_Footprint1
+    4300042: VRJ_Rabbit_Footprint2
+    4300044: VRJ_Rabbit_Footprint3
+    4300046: VRJ_Rabbit_Footprint4
+    4300048: VRJ_Rabbit_Footprint5
+    4300050: VRJ_CocoaCan
+    4300052: VRJ_CocoaCan1
+    4300054: VRJ_CocoaCan2_spilled
+    4300056: VRJ_CocoaCan3
+    4300058: VRJ_CocoaCan4
+    4300060: VRJ_CocoaCan5
+    4300062: VRJ_AssitantTable
+    4300064: VRJ_Magician_Table
+    4300066: VRJ_Magician_Coatrack
+    4300068: VRJ_Samovar1
+    4300070: VRJ_Labbench
+    4300072: VRJ_Crystal_Mounted
+    4300074: VRJ_CrystalMount
+    4300076: VRJ_Electrical_Arc_03
+    4300078: VRJ_Electrical_Arc
+    4300080: VRJ_Electrical_Arc_02
+    4300082: VRJ_Electrical_Arc_04
+    4300084: VRJ_Electrical_Arc_05
+    4300086: VRJ_Electrical_Arc_06
+    4300088: VRJ_TeaPot_Spin
+    4300090: VRJ_Crystal
+    4300092: VRJ_Skybox
+    4300094: VRJ_Note_Blank
+    4300096: VRJ_Note_burned
+    4300098: VRJ_Note_Inkrevealed
+    4300100: VRJ_EgyptPostCard
+    4300102: VRJ_ManifestoPlaybill
+    4300104: VRJ_Hutch_Star
+    4300106: VRJ_TowerLeg2
+    4300108: VRJ_TopHat
+    4300110: VRJ_PaintingRabbit
+    4300112: VRJ_TeaPot_Broken
+    4300114: VRJ_TowerLeg
+    4300116: VRJ_SparEndcap_Floor
+    4300118: VRJ_SparEndcap_Ceiling
+    4300120: VRJ_Crystal_Mounted_on
+    4300122: VRJ_Crystal_Mounted_off
+    4300124: VRJ_Tea_Cup
+    4300126: VRJ_Tea_Cup_Samovar
+    4300128: VRJ_NewsPaper
+    4300130: VRJ_EgyptPostcard
+    4300132: VRJ_Bellows
+    4300134: VRJ_Hutch_Star_onSpar
+    4300136: VRJ_Hutch_Star_onHutch
+    4300138: VRJ_CocoaCanUnspilled
+    4300140: VRJ_Parasol_Note
+    4300142: VRJ_CarrotPlate
+    7400000: BellowsAnimation
+    9500000: //RootNode
+    13700000: VRJ_Bellows
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: BellowsAnimation
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: VRJ_BELLOWSGROUP
+        weight: 1
+      - path: VRJ_BELLOWSGROUP/BellowsAnimationRoot
+        weight: 1
+      - path: VRJ_BELLOWSGROUP/BellowsAnimationRoot/BellowsBottomJointRoot
+        weight: 1
+      - path: VRJ_BELLOWSGROUP/BellowsAnimationRoot/BellowsBottomJointRoot/BellowsJoint_Bottom
+        weight: 1
+      - path: VRJ_BELLOWSGROUP/BellowsAnimationRoot/BellowsTopRoot
+        weight: 1
+      - path: VRJ_BELLOWSGROUP/BellowsAnimationRoot/BellowsTopRoot/BellowsJointTop
+        weight: 1
+      - path: VRJ_BELLOWSGROUP/VRJ_Bellows
+        weight: 1
+      - path: VRJ_MasterGroup
+        weight: 1
+      - path: VRJ_MasterGroup/CUBEMAP_CAMERAS
+        weight: 1
+      - path: VRJ_MasterGroup/CUBEMAP_CAMERAS/X_minus
+        weight: 1
+      - path: VRJ_MasterGroup/CUBEMAP_CAMERAS/X_plus
+        weight: 1
+      - path: VRJ_MasterGroup/CUBEMAP_CAMERAS/Y_minus
+        weight: 1
+      - path: VRJ_MasterGroup/CUBEMAP_CAMERAS/Y_plus
+        weight: 1
+      - path: VRJ_MasterGroup/CUBEMAP_CAMERAS/Z_minus
+        weight: 1
+      - path: VRJ_MasterGroup/CUBEMAP_CAMERAS/Z_plus
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_AssitantTable
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_CocoaCan
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_CocoaCan1
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_CocoaCan3
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_CocoaCan4
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_CocoaCan5
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_CocoaCanUnspilled
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_CocoaSpilledGroup
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_CocoaSpilledGroup/VRJ_Cocoa_Mound
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_CocoaSpilledGroup/VRJ_CocoaCan2_spilled
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_CocoaSpilledGroup/VRJ_CocoaCan2_spilledLid
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_Crystal
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_Floor_SectionSpar
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_hutch_drawers
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_hutch_marble
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_hutch_mirror
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_hutch_mirror/VRJ_Mirror_BackofMirror
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_hutch_mirror/VRJ_Mirror_Crystal
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_hutch_mirror/VRJ_Mirror_CrystalOn
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_hutch_mirror/VRJ_Mirror_NoCrystal
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_hutch_mirror/VRJ_MirrorFrame
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_Hutch_Star_onHutch
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_Labbench
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_Labbench/VRJ_Crystal_Mounted_off
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_Labbench/VRJ_Crystal_Mounted_on
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_Labbench/VRJ_CrystalMount
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_Labbench/VRJ_Electrical_Arc
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_Labbench/VRJ_Electrical_Arc/VRJ_Electrical_Arc 1
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_Labbench/VRJ_Electrical_Arc/VRJ_Electrical_Arc_02
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_Labbench/VRJ_Electrical_Arc/VRJ_Electrical_Arc_03
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_Labbench/VRJ_Electrical_Arc/VRJ_Electrical_Arc_04
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_Labbench/VRJ_Electrical_Arc/VRJ_Electrical_Arc_05
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_Labbench/VRJ_Electrical_Arc/VRJ_Electrical_Arc_06
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_Labbench/VRJ_Labbench 1
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_Labbench/VRJ_Samovar1
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_Magician_Coatrack
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_Magician_Table
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_PaperItemsGroup
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_PaperItemsGroup/VRJ_EgyptPostcard
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_PaperItemsGroup/VRJ_ManifestoPlaybill
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_PaperItemsGroup/VRJ_NewsPaper
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_PaperItemsGroup/VRJ_Note_Blank
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_PaperItemsGroup/VRJ_Note_burned
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_PaperItemsGroup/VRJ_Note_Inkrevealed
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_Rabbit_Footprint
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_Rabbit_Footprint1
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_Rabbit_Footprint2
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_Rabbit_Footprint3
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_Rabbit_Footprint4
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_Rabbit_Footprint5
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_room_Group
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_room_Group/VRJ_Ceiling
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_room_Group/VRJ_Column
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_room_Group/VRJ_Column1
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_room_Group/VRJ_Column2
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_room_Group/VRJ_Column3
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_room_Group/VRJ_magician_door
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_room_Group/VRJ_Painting
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_room_Group/VRJ_PaintingRabbit
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_room_Group/VRJ_Room
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_room_Group/VRJChandelier
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_Skybox
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_SparTowerLegGroup
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_SparTowerLegGroup/VRJ_Hutch_Star_onSpar
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_SparTowerLegGroup/VRJ_TowerLeg
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_SparTowerLegGroup/VRJ_TowerLeg/VRJ_SparEndcap_Ceiling
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_SparTowerLegGroup/VRJ_TowerLeg/VRJ_SparEndcap_Floor
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_Tea_Cup
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_Tea_Cup_Samovar
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_TeaPot_Broken
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_TeaPot_Spin
+        weight: 1
+      - path: VRJ_MasterGroup/VRJ_TopHat
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
